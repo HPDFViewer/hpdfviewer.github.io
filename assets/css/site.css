@@ -181,6 +181,10 @@ p { margin: 0; text-wrap: pretty; }
 .plan li + li { margin-top: 10px; }
 .plan li::before { content: "✓"; position: absolute; left: 0; color: var(--coral-text); font-weight: 800; }
 .note { color: var(--text-soft); font-size: 0.92rem; margin-top: 22px; }
+.tag-beta { margin-left: 6px; background: color-mix(in srgb, var(--blue) 16%, var(--surface)); color: var(--link); }
+.beta-note { display: flex; gap: 12px; align-items: flex-start; margin-top: 24px; padding: 14px 18px; border-radius: var(--radius-s); background: color-mix(in srgb, var(--blue) 8%, var(--bg)); border: 1px solid color-mix(in srgb, var(--blue) 28%, var(--line)); color: var(--text); font-size: 0.95rem; max-width: 36em; }
+.beta-note .tag { margin: 2px 0 0; flex: none; }
+.note .tag { margin: 0 6px 0 0; }
 @media (max-width: 760px) { .plans { grid-template-columns: 1fr; } }
 
 /* FAQ */
