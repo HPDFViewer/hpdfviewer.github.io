@@ -1,0 +1,76 @@
+# HPDFViewer
+
+> Android app to read, fill in, sign and share PDFs; free; no account; files stay on the device.
+
+HPDFViewer runs on Android 8.0 or later, on phones and tablets. The interface is in Italian and English. The app is free and shows ads; Premium is a one-time in-app purchase with no subscription. The developer is Angelo Moroni. The app is on Google Play: https://play.google.com/store/apps/details?id=com.hooloovoochimico.hpdfviewer
+
+## What it does
+
+- Read: PDF pages in continuous vertical scrolling, pinch-to-zoom and double tap to zoom, one tap for full screen.
+- Fill in: text in three sizes where you tap, today's date with one tap in your country's format, check marks and crosses for boxes. Move, resize and delete items; undo and redo.
+- Sign: draw a signature and initials once, then insert them with one tap. They are saved encrypted on the device, and you can protect them with a fingerprint check before each signature. The free version keeps one signature and one set of initials; Premium keeps up to 3 signatures and 3 sets of initials and can sign for another person, used once and not saved (Premium).
+- Pen: freehand drawing with a finger, two fingers to scroll. Four colors and three thicknesses. The eraser removes a whole stroke with one tap.
+- Scan: photograph paper sheets. Edges are detected automatically, several pages are supported, and the result is a PDF ready to fill in and sign. Free. The app does not ask for camera permission.
+- Pages: add pages at the end from other PDFs, images or scans. Remove pages (Premium). Reorder pages by dragging them (Premium).
+- Share: one tap creates the filled copy and opens the share menu, or save the copy wherever you want. The original file is never modified.
+
+## Privacy
+
+- No account: no registration, no email address, no profile.
+- No cloud: PDFs, scans and signatures never go over the internet. The app works offline.
+- Encrypted signatures: signatures are stored encrypted on the device and can be protected with a fingerprint.
+- Original kept intact: each share or save creates a new copy.
+- Ads: the free version shows Google AdMob ads, which do not see your documents.
+- Full details: https://hpdfviewer.github.io/privacy.html
+
+## Limits
+
+- The signature is a simple electronic signature under eIDAS, not a qualified digital signature. It does not replace a digital signature when one is expressly required.
+- HPDFViewer does not fill in interactive AcroForm fields as form fields. It writes on top of the page, where you tap.
+- Android only.
+
+## Pages
+
+- [Italian home](https://hpdfviewer.github.io/): main landing page in Italian.
+- [English home](https://hpdfviewer.github.io/en/): main landing page in English.
+- [Become a tester](https://hpdfviewer.github.io/tester.html): join the beta test and receive test versions first.
+- [Privacy policy](https://hpdfviewer.github.io/privacy.html): what data the app handles and how.
+- [Google Play listing](https://play.google.com/store/apps/details?id=com.hooloovoochimico.hpdfviewer): download and install the app.
+
+## FAQ
+
+### How do you fill in and sign a PDF on Android?
+
+Open the PDF with HPDFViewer (also directly from email, WhatsApp, Telegram or Drive), tap where you want to write and enter text, a date or check marks. Tap Sign to insert your signature, then Share: the app creates a filled copy and sends it with the app you prefer.
+
+### Is HPDFViewer free?
+
+Yes. Reading, filling in, signing, scanning and sharing are free, with unobtrusive ads: never full screen, never between pages, and never while you fill in or sign. Premium is a one-time purchase with no subscription. It removes the ads and adds some features.
+
+### Are my PDFs uploaded online?
+
+No. HPDFViewer has no accounts and never sends PDFs, scans or signatures over the network. A document leaves the phone only when you share it with another app.
+
+### Does a signature made with HPDFViewer have legal value?
+
+It is a simple electronic signature under the eIDAS regulation: the image of your signature drawn on the document. It is not a qualified digital signature, so it does not replace a digital signature when one is expressly required.
+
+### Does it work with any PDF, even scanned or without fillable fields?
+
+Yes. HPDFViewer writes on top of the page, like a pen on paper, so it also works with scanned forms and with PDFs that have no interactive fields. It does not fill in interactive form fields (AcroForm) as such: you write where you tap.
+
+### Is the original file modified?
+
+No, never. When you share or save, HPDFViewer always creates a new copy of the PDF with what you added.
+
+### Can I scan a paper document?
+
+Yes, for free. Scan document photographs the sheets, detects the edges and creates a PDF that you can fill in, sign and share right away. Pages are processed on the phone, and the app does not ask for camera permission.
+
+### Which devices does HPDFViewer work on?
+
+Phones and tablets with Android 8.0 or later. The app is downloaded from Google Play.
+
+### How do you become a beta tester of HPDFViewer?
+
+Open the Become a tester page at https://hpdfviewer.github.io/tester.html, join the test with your Google account and update the app from the Play Store: you receive the test versions before everyone else. You can leave the test at any time.

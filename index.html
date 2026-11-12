@@ -3,19 +3,465 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>HPDFViewer</title>
-<style>
-  body { font: 16px/1.6 system-ui, sans-serif; max-width: 720px; margin: 0 auto; padding: 24px 16px; color: #1b1b1f; background: #fff; }
-  @media (prefers-color-scheme: dark) { body { color: #e4e1e6; background: #131316; } a { color: #a8c7fa; } }
-</style>
+<title>HPDFViewer — Leggi, compila e firma i PDF su Android</title>
+<meta name="description" content="HPDFViewer è l'app Android per leggere, compilare, firmare e condividere un PDF in meno di un minuto. Gratis, senza account: i tuoi file restano sul telefono.">
+<link rel="canonical" href="https://hpdfviewer.github.io/">
+<link rel="alternate" hreflang="it" href="https://hpdfviewer.github.io/">
+<link rel="alternate" hreflang="en" href="https://hpdfviewer.github.io/en/">
+<link rel="alternate" hreflang="x-default" href="https://hpdfviewer.github.io/">
+<meta name="theme-color" content="#1e2a4a">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/assets/img/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="HPDFViewer">
+<meta property="og:locale" content="it_IT">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:url" content="https://hpdfviewer.github.io/">
+<meta property="og:title" content="HPDFViewer — Leggi, compila e firma i PDF su Android">
+<meta property="og:description" content="Apri il modulo, scrivi, firma e rimandalo in meno di un minuto. Gratis, senza account: i tuoi file restano sul telefono.">
+<meta property="og:image" content="https://hpdfviewer.github.io/assets/img/og-it.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="586">
+<meta property="og:image:alt" content="HPDFViewer: leggi, compila e firma i PDF in un minuto">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/assets/css/site.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MobileApplication",
+      "@id": "https://hpdfviewer.github.io/#app",
+      "name": "HPDFViewer",
+      "alternateName": "HPDFViewer - Leggi e firma PDF",
+      "description": "App Android per leggere un PDF in scorrimento verticale continuo, compilarlo con testo, spunte, penna e firma, e condividere la copia compilata. Senza account: PDF e firme restano sul dispositivo.",
+      "url": "https://hpdfviewer.github.io/",
+      "image": "https://hpdfviewer.github.io/assets/img/icon-512.png",
+      "screenshot": [
+        "https://hpdfviewer.github.io/assets/img/shot-it-1-1080.webp",
+        "https://hpdfviewer.github.io/assets/img/shot-it-2-1080.webp",
+        "https://hpdfviewer.github.io/assets/img/shot-it-3-1080.webp"
+      ],
+      "applicationCategory": "ProductivityApplication",
+      "applicationSubCategory": "PDF reader, PDF form filler, PDF signer",
+      "operatingSystem": "Android 8.0+",
+      "inLanguage": ["it", "en"],
+      "isAccessibleForFree": true,
+      "installUrl": "https://play.google.com/store/apps/details?id=com.hooloovoochimico.hpdfviewer",
+      "downloadUrl": "https://play.google.com/store/apps/details?id=com.hooloovoochimico.hpdfviewer",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+      "featureList": [
+        "Lettura PDF in scorrimento verticale continuo con pinch-to-zoom",
+        "Testo, data di oggi e spunte ✓ ✗ su qualsiasi PDF",
+        "Firma e sigla disegnate una volta, salvate cifrate sul dispositivo",
+        "Penna a mano libera con gomma",
+        "Scansione di documenti cartacei in PDF",
+        "Aggiunta di pagine da altri PDF, immagini o scansioni",
+        "Condivisione di una copia compilata: l'originale non viene modificato",
+        "Nessun account, funziona offline"
+      ],
+      "author": { "@type": "Person", "name": "Angelo Moroni" },
+      "publisher": { "@id": "https://hpdfviewer.github.io/#org" }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://hpdfviewer.github.io/#org",
+      "name": "HPDFViewer",
+      "url": "https://hpdfviewer.github.io/",
+      "logo": "https://hpdfviewer.github.io/assets/img/icon-512.png"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://hpdfviewer.github.io/#site",
+      "name": "HPDFViewer",
+      "url": "https://hpdfviewer.github.io/",
+      "inLanguage": "it",
+      "publisher": { "@id": "https://hpdfviewer.github.io/#org" }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://hpdfviewer.github.io/#faq",
+      "inLanguage": "it",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Come si compila e si firma un PDF su Android?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Apri il PDF con HPDFViewer (anche direttamente da email, WhatsApp, Telegram o Drive), tocca il punto in cui vuoi scrivere e inserisci testo, data o spunte. Tocca Firma per inserire la tua firma, poi Condividi: l'app crea una copia compilata e la invia con l'app che preferisci." }
+        },
+        {
+          "@type": "Question",
+          "name": "HPDFViewer è gratis?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Sì. Leggere, compilare, firmare, scansionare e condividere è gratuito, con pubblicità discreta: mai a schermo intero, mai tra le pagine e mai mentre compili o firmi. Premium è un acquisto una tantum, senza abbonamento, che toglie gli annunci e aggiunge alcune funzioni." }
+        },
+        {
+          "@type": "Question",
+          "name": "I miei PDF vengono caricati online?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. HPDFViewer non ha account e non invia mai PDF, scansioni o firme in rete. Un documento lascia il telefono solo quando sei tu a condividerlo con un'altra app." }
+        },
+        {
+          "@type": "Question",
+          "name": "La firma inserita con HPDFViewer ha valore legale?",
+          "acceptedAnswer": { "@type": "Answer", "text": "È una firma elettronica semplice ai sensi del regolamento eIDAS: l'immagine della tua firma disegnata sul documento. Non è una firma digitale qualificata, quindi non sostituisce la firma digitale quando è espressamente richiesta." }
+        },
+        {
+          "@type": "Question",
+          "name": "Funziona con qualsiasi PDF, anche scansionato o senza campi compilabili?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Sì. HPDFViewer scrive sopra la pagina, come una penna sulla carta, quindi funziona anche con i moduli scansionati e con i PDF senza campi interattivi. Non compila i campi modulo interattivi (AcroForm) come tali: scrivi nel punto che tocchi." }
+        },
+        {
+          "@type": "Question",
+          "name": "Il file originale viene modificato?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No, mai. Quando condividi o salvi, HPDFViewer crea sempre una copia nuova del PDF con quello che hai aggiunto." }
+        },
+        {
+          "@type": "Question",
+          "name": "Posso scansionare un documento cartaceo?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Sì, gratis. Scansiona documento fotografa i fogli, riconosce i bordi e crea un PDF che puoi subito compilare, firmare e condividere. Le pagine sono elaborate sul telefono e l'app non chiede il permesso della fotocamera." }
+        },
+        {
+          "@type": "Question",
+          "name": "Su quali dispositivi funziona HPDFViewer?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Su telefoni e tablet con Android 8.0 o successivo. Si scarica da Google Play." }
+        },
+        {
+          "@type": "Question",
+          "name": "Come divento beta tester di HPDFViewer?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Apri la pagina Diventa tester su hpdfviewer.github.io/tester.html, partecipa al test con il tuo account Google e aggiorna l'app dal Play Store: riceverai le versioni di prova prima di tutti. Puoi lasciare il test in qualsiasi momento." }
+        }
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body>
-<h1>HPDFViewer</h1>
-<p>Leggi, compila, firma e condividi i tuoi PDF. / Read, fill, sign and share your PDFs.</p>
-<ul>
-  <li><a href="tester.html">Diventa tester / Become a tester</a></li>
-  <li><a href="privacy.html">Informativa privacy / Privacy policy</a></li>
-  <li>Contatti / Contact: <a href="mailto:mor.angelo.mor@gmail.com">mor.angelo.mor@gmail.com</a></li>
-</ul>
+<a class="skip" href="#main">Vai al contenuto</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="HPDFViewer, pagina iniziale">
+      <img src="/assets/img/icon.svg" alt="" width="36" height="36">
+      HPDFViewer
+    </a>
+    <nav class="site-nav" aria-label="Sezioni">
+      <a href="#funzioni">Funzioni</a>
+      <a href="#privacy">Privacy</a>
+      <a href="#premium">Gratis o Premium</a>
+      <a href="#faq">Domande</a>
+    </nav>
+    <a class="lang" href="/en/" hreflang="en" lang="en" aria-label="English version">EN</a>
+    <a class="btn btn-primary btn-small" href="https://play.google.com/store/apps/details?id=com.hooloovoochimico.hpdfviewer&amp;hl=it">Scarica</a>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">App Android per i tuoi PDF</p>
+      <h1>Leggi, compila e <span class="sign">firma<svg viewBox="37 58 45 18" preserveAspectRatio="none" aria-hidden="true"><path pathLength="100" d="M39,70 C42,61 47,60 46.5,66 C46,72 51,74 54.5,66.5 C57.5,60 61,62 60.5,67 C60,72 66,71 70,66 C72.5,63 76,61.5 80,62.5"/></svg></span> i PDF in un minuto</h1>
+      <p class="lead">Ti arriva un modulo da compilare e firmare? Aprilo con HPDFViewer, scrivi, firma e rimandalo. Senza tutorial, senza account, e i file restano sul tuo telefono.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.hooloovoochimico.hpdfviewer&amp;hl=it">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M5 3.5v17a1 1 0 0 0 1.5.86l14-8.5a1 1 0 0 0 0-1.72l-14-8.5A1 1 0 0 0 5 3.5Z"/></svg>
+          Scarica da Google Play
+        </a>
+        <a class="btn btn-ghost" href="/tester.html">Diventa beta tester</a>
+      </div>
+      <ul class="facts">
+        <li>Gratis</li>
+        <li>Android 8.0 o successivo</li>
+        <li>Nessun account</li>
+        <li>Funziona offline</li>
+      </ul>
+    </div>
+    <div class="hero-shot">
+      <img src="/assets/img/shot-it-1-540.webp"
+           srcset="/assets/img/shot-it-1-540.webp 540w, /assets/img/shot-it-1-1080.webp 1080w"
+           sizes="(max-width: 860px) 78vw, 360px"
+           width="540" height="960" fetchpriority="high"
+           alt="HPDFViewer con un modulo di iscrizione compilato: caselle spuntate, data e firma inserite, pronto da condividere">
+    </div>
+  </div>
+</section>
+
+<section class="section section-soft" id="come-funziona">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Dal modulo ricevuto al modulo inviato, in tre passi</h2>
+      <p>HPDFViewer fa una cosa sola e la fa in fretta: ti fa compilare e rimandare un PDF dal telefono.</p>
+    </div>
+    <ol class="steps">
+      <li>
+        <h3>Apri</h3>
+        <p>Tocca il PDF in email, WhatsApp, Telegram, Drive o tra i download e scegli HPDFViewer. Oppure scansiona un foglio di carta.</p>
+      </li>
+      <li>
+        <h3>Compila e firma</h3>
+        <p>Tocca il punto in cui scrivere: testo, data di oggi, spunte. La firma la disegni una volta sola e poi la inserisci con un tocco.</p>
+      </li>
+      <li>
+        <h3>Condividi</h3>
+        <p>Un tocco crea la copia compilata e la invia con l'app che preferisci. Il file originale resta com'era.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="section" id="funzioni">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Tutto quello che serve per un modulo, niente di più</h2>
+      <p>Poche funzioni, tutte a portata di pollice. Funziona su qualsiasi PDF, anche scansionato, perché scrivi sopra la pagina come con una penna.</p>
+    </div>
+    <div class="features">
+      <article class="feature">
+        <div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 12h6M9 16h6"/></svg></div>
+        <h3>Leggi</h3>
+        <ul>
+          <li>Pagine in scorrimento verticale continuo, come una pagina web</li>
+          <li>Pinch-to-zoom e doppio tocco per ingrandire</li>
+          <li>Un tocco sulla pagina e leggi a schermo intero</li>
+        </ul>
+      </article>
+      <article class="feature">
+        <div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 6V4h14v2M12 4v16M9 20h6"/></svg></div>
+        <h3>Compila</h3>
+        <ul>
+          <li>Testo in tre dimensioni, dove tocchi</li>
+          <li>"Data di oggi" con un tocco, nel formato del tuo Paese</li>
+          <li>Spunte ✓ e ✗ per caselle e crocette</li>
+          <li>Sposta, ridimensiona, cancella; Annulla e Ripeti sempre lì</li>
+        </ul>
+      </article>
+      <article class="feature">
+        <div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 16c2-6 5-7 5-3s3 5 5 0 5-3 4 0 3 2 4 1M3 21h18"/></svg></div>
+        <h3>Firma</h3>
+        <ul>
+          <li>Disegna firma e sigla una volta, poi inseriscile con un tocco</li>
+          <li>Salvate cifrate sul telefono: non lasciano mai il dispositivo</li>
+          <li>Se vuoi, l'impronta digitale prima di ogni firma</li>
+        </ul>
+      </article>
+      <article class="feature">
+        <div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1-4L16 5l3 3L8 19zM14 7l3 3"/></svg></div>
+        <h3>Penna</h3>
+        <ul>
+          <li>Disegna a mano libera con un dito, scorri con due</li>
+          <li>Quattro colori e tre spessori</li>
+          <li>La gomma toglie un tratto intero con un tocco</li>
+        </ul>
+      </article>
+      <article class="feature">
+        <div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8V5h3M17 5h3v3M20 16v3h-3M7 19H4v-3M4 12h16"/></svg></div>
+        <h3>Scansiona</h3>
+        <ul>
+          <li>Fotografa i fogli: bordi riconosciuti in automatico, più pagine</li>
+          <li>Ne esce un PDF pronto da compilare e firmare</li>
+          <li>Nessun permesso fotocamera chiesto dall'app</li>
+        </ul>
+      </article>
+      <article class="feature">
+        <div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 7h11v13H8zM5 17V4h11M13.5 11v5M11 13.5h5"/></svg></div>
+        <h3>Pagine</h3>
+        <ul>
+          <li>Aggiungi in coda altri PDF, immagini o scansioni</li>
+          <li>Rimuovi pagine <span class="tag">Premium</span></li>
+          <li>Riordina le pagine trascinandole <span class="tag">Premium</span></li>
+        </ul>
+      </article>
+      <article class="feature">
+        <div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="18" cy="18" r="2.5"/><path d="M8.2 10.9l7.6-3.800M8.2 13.1l7.6 3.800"/></svg></div>
+        <h3>Condividi</h3>
+        <ul>
+          <li>Un tocco crea la copia compilata e apre la condivisione</li>
+          <li>Oppure salva la copia dove vuoi</li>
+          <li>L'originale non viene mai modificato</li>
+        </ul>
+      </article>
+      <article class="feature">
+        <div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M10 16h4"/></svg></div>
+        <h3>Telefono e tablet</h3>
+        <ul>
+          <li>Interfaccia pensata anche per gli schermi grandi</li>
+          <li>In italiano e in inglese</li>
+          <li>Riprendi da dove eri: le modifiche restano in bozza</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section section-soft" id="schermate">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Guardala all'opera</h2>
+      <p>Niente menu nascosti: gli strumenti stanno in una barra in basso e il resto dello schermo è del documento.</p>
+    </div>
+    <div class="shots" tabindex="0" role="group" aria-label="Schermate dell'app">
+      <figure>
+        <img loading="lazy" src="/assets/img/shot-it-2-540.webp" srcset="/assets/img/shot-it-2-540.webp 540w, /assets/img/shot-it-2-1080.webp 1080w" sizes="270px" width="540" height="960" alt="Scrivi dove vuoi: nome, data di nascita e indirizzo inseriti sul modulo, casella spuntata">
+        <figcaption>Testo, data e spunte con un tocco</figcaption>
+      </figure>
+      <figure>
+        <img loading="lazy" src="/assets/img/shot-it-3-540.webp" srcset="/assets/img/shot-it-3-540.webp 540w, /assets/img/shot-it-3-1080.webp 1080w" sizes="270px" width="540" height="960" alt="Schermata Firma: la firma disegnata con il dito, con i pulsanti Cancella e Salva">
+        <figcaption>La firma si disegna una volta sola</figcaption>
+      </figure>
+      <figure>
+        <img loading="lazy" src="/assets/img/shot-it-4-540.webp" srcset="/assets/img/shot-it-4-540.webp 540w, /assets/img/shot-it-4-1080.webp 1080w" sizes="270px" width="540" height="960" alt="Un modulo PDF aperto in lettura, con la barra degli strumenti in basso">
+        <figcaption>Apri il PDF da qualsiasi app</figcaption>
+      </figure>
+      <figure>
+        <img loading="lazy" src="/assets/img/shot-it-5-540.webp" srcset="/assets/img/shot-it-5-540.webp 540w, /assets/img/shot-it-5-1080.webp 1080w" sizes="270px" width="540" height="960" alt="Schermata iniziale di HPDFViewer con il pulsante Apri PDF">
+        <figcaption>Una schermata iniziale, un pulsante</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="section band" id="privacy">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Privacy</p>
+      <h2>I tuoi documenti non vanno online. Mai.</h2>
+      <p>Contratti, moduli medici, documenti d'identità: quello che apri con HPDFViewer resta sul tuo telefono finché non sei tu a condividerlo.</p>
+    </div>
+    <div class="pillars">
+      <div>
+        <h3>Nessun account</h3>
+        <p>Niente registrazione, niente email, niente profilo. Installi e apri il PDF.</p>
+      </div>
+      <div>
+        <h3>Niente cloud</h3>
+        <p>PDF, scansioni e firme non passano mai da internet. L'app funziona anche offline.</p>
+      </div>
+      <div>
+        <h3>Firme cifrate</h3>
+        <p>Le firme sono salvate cifrate sul dispositivo e puoi proteggerle con l'impronta digitale.</p>
+      </div>
+      <div>
+        <h3>Originale intatto</h3>
+        <p>Ogni condivisione crea una copia nuova: il file che hai ricevuto non viene toccato.</p>
+      </div>
+    </div>
+    <p class="more">La versione gratuita mostra annunci di Google AdMob, che non vedono i tuoi documenti. Tutti i dettagli nell'<a href="/privacy.html">informativa privacy</a>.</p>
+  </div>
+</section>
+
+<section class="section" id="premium">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Gratis, oppure Premium una volta per sempre</h2>
+      <p>Tutto quello che serve per compilare e firmare è gratuito. Premium è un acquisto una tantum: niente abbonamento.</p>
+    </div>
+    <div class="plans">
+      <div class="plan">
+        <h3>Gratis</h3>
+        <p class="price">0 € <small>con pubblicità discreta</small></p>
+        <ul>
+          <li>Lettura, testo, data, spunte e penna</li>
+          <li>Una firma e una sigla salvate</li>
+          <li>Scansione di documenti</li>
+          <li>Aggiunta di pagine da PDF, immagini e scansioni</li>
+          <li>Condivisione e salvataggio della copia compilata</li>
+        </ul>
+      </div>
+      <div class="plan plan-premium">
+        <h3>Premium</h3>
+        <p class="price">Una tantum <small>senza abbonamento</small></p>
+        <ul>
+          <li>Nessun annuncio</li>
+          <li>Rimozione e riordino delle pagine</li>
+          <li>Fino a 3 firme e 3 sigle salvate</li>
+          <li>Firma di un'altra persona, usata una volta e non salvata</li>
+        </ul>
+      </div>
+    </div>
+    <p class="note">Gli annunci della versione gratuita non sono mai a schermo intero, mai tra le pagine e mai mentre compili o firmi. Premium si acquista dall'app, tramite Google Play.</p>
+  </div>
+</section>
+
+<section class="section section-soft" id="faq">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Domande frequenti</h2>
+    </div>
+    <div class="faq">
+      <details open>
+        <summary><h3>Come si compila e si firma un PDF su Android?</h3></summary>
+        <p>Apri il PDF con HPDFViewer (anche direttamente da email, WhatsApp, Telegram o Drive), tocca il punto in cui vuoi scrivere e inserisci testo, data o spunte. Tocca <em>Firma</em> per inserire la tua firma, poi <em>Condividi</em>: l'app crea una copia compilata e la invia con l'app che preferisci.</p>
+      </details>
+      <details>
+        <summary><h3>HPDFViewer è gratis?</h3></summary>
+        <p>Sì. Leggere, compilare, firmare, scansionare e condividere è gratuito, con pubblicità discreta: mai a schermo intero, mai tra le pagine e mai mentre compili o firmi. Premium è un acquisto una tantum, senza abbonamento, che toglie gli annunci e aggiunge alcune funzioni.</p>
+      </details>
+      <details>
+        <summary><h3>I miei PDF vengono caricati online?</h3></summary>
+        <p>No. HPDFViewer non ha account e non invia mai PDF, scansioni o firme in rete. Un documento lascia il telefono solo quando sei tu a condividerlo con un'altra app. Vedi l'<a href="/privacy.html">informativa privacy</a>.</p>
+      </details>
+      <details>
+        <summary><h3>La firma inserita con HPDFViewer ha valore legale?</h3></summary>
+        <p>È una firma elettronica semplice ai sensi del regolamento eIDAS: l'immagine della tua firma disegnata sul documento. Non è una firma digitale qualificata, quindi non sostituisce la firma digitale quando è espressamente richiesta.</p>
+      </details>
+      <details>
+        <summary><h3>Funziona con qualsiasi PDF, anche scansionato o senza campi compilabili?</h3></summary>
+        <p>Sì. HPDFViewer scrive sopra la pagina, come una penna sulla carta, quindi funziona anche con i moduli scansionati e con i PDF senza campi interattivi. Non compila i campi modulo interattivi (AcroForm) come tali: scrivi nel punto che tocchi.</p>
+      </details>
+      <details>
+        <summary><h3>Il file originale viene modificato?</h3></summary>
+        <p>No, mai. Quando condividi o salvi, HPDFViewer crea sempre una copia nuova del PDF con quello che hai aggiunto.</p>
+      </details>
+      <details>
+        <summary><h3>Posso scansionare un documento cartaceo?</h3></summary>
+        <p>Sì, gratis. <em>Scansiona documento</em> fotografa i fogli, riconosce i bordi e crea un PDF che puoi subito compilare, firmare e condividere. Le pagine sono elaborate sul telefono e l'app non chiede il permesso della fotocamera.</p>
+      </details>
+      <details>
+        <summary><h3>Su quali dispositivi funziona HPDFViewer?</h3></summary>
+        <p>Su telefoni e tablet con Android 8.0 o successivo. Si scarica da <a href="https://play.google.com/store/apps/details?id=com.hooloovoochimico.hpdfviewer&amp;hl=it">Google Play</a>.</p>
+      </details>
+      <details>
+        <summary><h3>Come divento beta tester di HPDFViewer?</h3></summary>
+        <p>Apri la pagina <a href="/tester.html">Diventa tester</a>, partecipa al test con il tuo account Google e aggiorna l'app dal Play Store: riceverai le versioni di prova prima di tutti. Puoi lasciare il test in qualsiasi momento.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="tester">
+  <div class="wrap">
+    <div class="tester">
+      <div>
+        <h2>Prova le novità prima di tutti</h2>
+        <p>Diventa beta tester: ricevi le nuove versioni in anteprima dal Play Store e ci aiuti a migliorarle. Bastano un dispositivo Android e un account Google.</p>
+      </div>
+      <div class="cta">
+        <a class="btn btn-light" href="/tester.html">Diventa beta tester</a>
+        <a class="btn btn-outline-light" href="https://play.google.com/store/apps/details?id=com.hooloovoochimico.hpdfviewer&amp;hl=it">Scarica l'app</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <a class="brand" href="/">
+      <img src="/assets/img/icon.svg" alt="" width="36" height="36">
+      HPDFViewer
+    </a>
+    <ul>
+      <li><a href="https://play.google.com/store/apps/details?id=com.hooloovoochimico.hpdfviewer&amp;hl=it">Google Play</a></li>
+      <li><a href="/tester.html">Diventa tester</a></li>
+      <li><a href="/privacy.html">Informativa privacy</a></li>
+      <li><a href="mailto:mor.angelo.mor@gmail.com">Contatti</a></li>
+      <li><a href="/en/" hreflang="en" lang="en">English</a></li>
+    </ul>
+    <p class="legal">© 2026 Angelo Moroni. Google Play è un marchio di Google LLC. La firma inserita è una firma elettronica semplice (eIDAS), non una firma digitale qualificata.</p>
+  </div>
+</footer>
 </body>
 </html>
