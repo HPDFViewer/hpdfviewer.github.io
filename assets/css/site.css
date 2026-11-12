@@ -155,10 +155,9 @@ p { margin: 0; text-wrap: pretty; }
 
 /* Screenshots */
 .shots { display: flex; gap: 20px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 4px 20px 24px; margin-inline: -20px; scrollbar-width: thin; }
-.shots figure { margin: 0; flex: 0 0 min(270px, 70vw); scroll-snap-align: center; }
+.shots figure { margin: 0; flex: 0 0 min(240px, 70vw); scroll-snap-align: center; }
 .shots img { border-radius: var(--radius); box-shadow: var(--shadow); }
 .shots figcaption { margin-top: 12px; font-size: 0.92rem; color: var(--text-soft); text-align: center; }
-@media (min-width: 1180px) { .shots { overflow: visible; justify-content: space-between; } .shots figure { flex-basis: 258px; } }
 
 /* Privacy band */
 .band { background: linear-gradient(160deg, var(--blue) 0%, var(--blue-deep) 70%, #0f2466 100%); color: #fff; }
