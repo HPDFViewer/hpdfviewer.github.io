@@ -9,6 +9,8 @@ HPDFViewer runs on Android 8.0 or later, on phones and tablets. The interface is
 - Read: PDF pages in continuous vertical scrolling, pinch-to-zoom and double tap to zoom, one tap for full screen.
 - Fill in: text in three sizes where you tap, today's date with one tap in your country's format, check marks and crosses for boxes. Move, resize and delete items; undo and redo.
 - Sign: draw a signature and initials once, then insert them with one tap. They are saved encrypted on the device, and you can protect them with a fingerprint check before each signature. The free version keeps one signature and one set of initials; Premium keeps up to 3 signatures and 3 sets of initials and can sign for another person, used once and not saved (Premium).
+- Signature export and import (in arrivo / coming soon): take your signatures to another phone in a password-protected file. Free.
+- Signature from a photo (in arrivo / coming soon, Premium): sign on white paper, photograph it, and the app turns it into a saved signature.
 - Pen: freehand drawing with a finger, two fingers to scroll. Four colors and three thicknesses. The eraser removes a whole stroke with one tap.
 - Scan: photograph paper sheets. Edges are detected automatically, several pages are supported, and the result is a PDF ready to fill in and sign. Free. The app does not ask for camera permission.
 - Pages: add pages at the end from other PDFs, images or scans. Remove pages (Premium). Reorder pages by dragging them (Premium).

@@ -152,6 +152,7 @@ p { margin: 0; text-wrap: pretty; }
 .feature ul { margin: 12px 0 0; padding-left: 1.1em; color: var(--text-soft); font-size: 0.98rem; }
 .feature li + li { margin-top: 6px; }
 .tag { display: inline-block; margin-left: 8px; padding: 2px 9px; border-radius: 999px; background: color-mix(in srgb, var(--coral) 18%, var(--surface)); color: var(--coral-text); font-size: 0.72rem; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; vertical-align: middle; white-space: nowrap; }
+.tag-soon { background: transparent; border: 1px solid currentColor; color: var(--coral-text); }
 
 /* Screenshots */
 .shots { display: flex; gap: 20px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 4px 20px 24px; margin-inline: -20px; scrollbar-width: thin; }
